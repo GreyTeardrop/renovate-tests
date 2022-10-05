@@ -1,4 +1,4 @@
-FROM openjdk:11.0.15-jdk as builder
+FROM openjdk:17.0.2-jdk as builder
 
 # Build something
 
