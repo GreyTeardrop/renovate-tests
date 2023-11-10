@@ -8,6 +8,16 @@
       "matchDatasources" : ["docker"],
       "matchPackageNames" : ["eclipse-temurin"],
       "versioning": "regex:^(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+)_(?<build>\\d+))?(-(?<compatibility>.*))?$"
+    },
+    {
+      "description": "Extract compatibility suffix from a Google Guava version",
+      "matchDatasources": [
+        "maven"
+      ],
+      "matchPackageNames": [
+        "com.google.guava:guava"
+      ],
+      "versionCompatibility": "^(?<version>[^-]+)(?<compatibility>-.*)?$"
     }
   ]
 }
