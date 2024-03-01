@@ -1,7 +1,7 @@
-FROM eclipse-temurin:11.0.15_10-jdk as builder
+FROM eclipse-temurin:21.0.2_13-jdk as builder
 
 # Build something
 
-FROM eclipse-temurin:11.0.15_10-jre
+FROM eclipse-temurin:21.0.2_13-jre
 
 # Run something
